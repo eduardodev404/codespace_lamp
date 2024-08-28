@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lamp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
 </head>
+ 
 <body>
-    
-<h2>tfiyti</h2>
-
-
+    <div class="login-container">
+        <h1>Entrar</h1>
+            <form action="#">
+                <input type="text" placeholder="Login" required id="Login">
+                <input type="password" placeholder="Senha" required id="Senha">
+                <button type="submit" onclick="logar(); return false">Entrar</button>
+            </form>
+    </div>
+ 
+    <script>
+        function logar (){
+ 
+            var login = document.getElementById('login').value;
+            var Senha = document.getElementById('Senha').value;
+ 
+            if (login == "eduardorodrigues2005@gmail.com" && Senha == "admin"){
+               
+                location.href = "depoisLogin.html";
+            }
+            else{
+                alert('Usuário ou Senha incorretos');
+            }
+        }
+ 
+ 
+ 
+    </script>
+ 
 </body>
 </html>
