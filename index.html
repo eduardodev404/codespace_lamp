@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Lamp</title>
+    <title>LUSION</title>
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -9,35 +9,16 @@
     <link rel="manifest" href="/site.webmanifest">
 
 </head>
- 
 <body>
+    <div id="cookie-banner">
+        Este site usa cookies para melhorar sua experiência. <buttonid="accept-cookies">Aceitar</button></div>
     <div class="login-container">
         <h1>Entrar</h1>
-            <form action="#">
-                <input type="text" placeholder="Login" required id="Login">
-                <input type="password" placeholder="Senha" required id="Senha">
-                <button type="submit" onclick="logar(); return false">Entrar</button>
-            </form>
+        <form action="#">
+            <input type="text" placeholder="Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
     </div>
- 
-    <script>
-        function logar (){
- 
-            var login = document.getElementById('login').value;
-            var Senha = document.getElementById('Senha').value;
- 
-            if (login == "eduardorodrigues2005@gmail.com" && Senha == "admin"){
-               
-                location.href = "depoisLogin.html";
-            }
-            else{
-                alert('Usuário ou Senha incorretos');
-            }
-        }
- 
- 
- 
-    </script>
- 
 </body>
 </html>
